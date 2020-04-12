@@ -35,7 +35,7 @@ let reducers = ( _, action) => {
 module Decode = {
   let decodePrice = (price) => Json.Decode.{
     rate: price |> field("rate", string),
-    code: price |> field("code", string, )
+    code: price |> field("code", string)
   };
 
   let decodeCurrency = (curr) => Json.Decode.{
